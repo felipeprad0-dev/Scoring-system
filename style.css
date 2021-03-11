@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    background-color:rgb(181, 101, 255);
+    border-radius: 10%;
+}
+
+div#title {
+    display: flex;
+    justify-content: center;
+}
+
+div#title #text-title {
+    color: rgb(63, 63, 63);
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+div#subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding-top: 50px ;
+}
+
+div#subtitle #text-subtitle{
+    color: rgb(63, 63, 63);
+    font-size: 24px;
+    width: 75px;
+    line-height: 16px;
+}
+
+div#container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 160px;   
+}
+
+div#container #score1, #score2 {
+    border: 0 none;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    border-radius: 0.8em;
+}
+
+div#container #score1:focus, #score2:focus{
+    border: 0.5px solid rgb(132, 0, 255);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+div#button-container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+div#button-container #button-calculate {
+    width: 200px;
+    border-radius: 0.8em;
+    border: 0 none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+div#button-container #button-calculate:hover {
+    background-color: rgb(204, 149, 255);
+    border: 2px solid rgb(204, 149, 255);
+    transition: 1s;
+}
+
+div#button-container #button-calculate:focus {
+    border: 0 none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+div#result-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
